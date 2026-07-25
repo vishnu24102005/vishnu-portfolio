@@ -1,0 +1,412 @@
+/* =========================================
+   ACHIEVEMENTS PAGE
+========================================= */
+
+.achievements-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 80% 5%,
+      rgba(167, 243, 107, 0.07),
+      transparent 450px
+    ),
+    #07090d;
+
+  color: #f5f7fb;
+
+  padding-bottom: 120px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.achievements-header {
+  width: min(1180px, calc(100% - 40px));
+
+  margin: auto;
+
+  padding: 120px 0 90px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.achievements-label {
+  color: #a7f36b;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 25px;
+}
+
+.achievements-header h1 {
+  max-width: 850px;
+
+  font-size: clamp(45px, 6vw, 78px);
+
+  line-height: 1.02;
+
+  letter-spacing: -3px;
+
+  font-weight: 500;
+}
+
+.achievements-intro {
+  max-width: 650px;
+
+  margin-top: 25px;
+
+  color: #9da5b3;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+.achievement-summary {
+  width: min(1180px, calc(100% - 40px));
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.summary-item {
+  min-height: 150px;
+
+  padding: 30px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 8px;
+}
+
+.summary-item:first-child {
+  padding-left: 0;
+}
+
+.summary-item:last-child {
+  border-right: none;
+}
+
+.summary-item strong {
+  color: #a7f36b;
+
+  font-size: 34px;
+
+  font-weight: 500;
+}
+
+.summary-item span {
+  color: #8e96a3;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   ACHIEVEMENT LIST
+========================================= */
+
+.achievements-list {
+  width: min(1180px, calc(100% - 40px));
+
+  margin: auto;
+}
+
+
+/* =========================================
+   ACHIEVEMENT ITEM
+========================================= */
+
+.achievement-item {
+  display: grid;
+
+  grid-template-columns: 80px 1fr;
+
+  gap: 35px;
+
+  padding: 80px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.achievement-number {
+  color: #a7f36b;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  padding-top: 6px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.achievement-card {
+  max-width: 900px;
+
+  padding: 0;
+}
+
+
+/* =========================================
+   TOP
+========================================= */
+
+.achievement-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.achievement-icon {
+  width: 52px;
+
+  height: 52px;
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+
+  background: rgba(255, 255, 255, 0.025);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 24px;
+
+  border-radius: 4px;
+}
+
+.achievement-year {
+  color: #606977;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   TYPE
+========================================= */
+
+.achievement-type {
+  color: #a7f36b;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.achievement-card h2 {
+  max-width: 800px;
+
+  font-size: 40px;
+
+  line-height: 1.15;
+
+  letter-spacing: -1.5px;
+
+  font-weight: 500;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.achievement-description {
+  max-width: 760px;
+
+  color: #9da5b3;
+
+  font-size: 14px;
+
+  line-height: 1.9;
+
+  margin-bottom: 35px;
+}
+
+
+/* =========================================
+   META
+========================================= */
+
+.achievement-meta {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 50px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.achievement-meta > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.meta-label {
+  color: #606977;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.meta-value {
+  color: #c4cad3;
+
+  font-size: 12px;
+}
+
+.grant-value {
+  color: #a7f36b;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .achievement-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .summary-item:nth-child(2) {
+    border-right: none;
+  }
+
+  .summary-item:nth-child(3) {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .summary-item:nth-child(4) {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .achievements-header {
+    width: calc(100% - 28px);
+
+    padding: 75px 0 60px;
+  }
+
+  .achievements-header h1 {
+    font-size: 42px;
+
+    letter-spacing: -2px;
+  }
+
+  .achievements-list {
+    width: calc(100% - 28px);
+  }
+
+  .achievement-summary {
+    width: calc(100% - 28px);
+  }
+
+  .summary-item {
+    min-height: 120px;
+
+    padding: 22px 15px;
+  }
+
+  .summary-item:first-child {
+    padding-left: 15px;
+  }
+
+  .achievement-item {
+    grid-template-columns: 35px 1fr;
+
+    gap: 12px;
+
+    padding: 60px 0;
+  }
+
+  .achievement-card h2 {
+    font-size: 29px;
+
+    letter-spacing: -1px;
+  }
+
+  .achievement-description {
+    font-size: 13px;
+  }
+
+  .achievement-meta {
+    flex-direction: column;
+
+    gap: 22px;
+  }
+
+}

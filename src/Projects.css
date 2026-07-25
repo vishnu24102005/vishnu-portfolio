@@ -1,0 +1,520 @@
+/* =========================================
+   PROJECTS PAGE
+========================================= */
+
+.projects-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 80% 5%,
+      rgba(167, 243, 107, 0.07),
+      transparent 450px
+    ),
+    #07090d;
+
+  color: #f5f7fb;
+
+  padding-bottom: 120px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.projects-header {
+  width: min(1180px, calc(100% - 40px));
+
+  margin: auto;
+
+  padding: 120px 0 90px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.projects-label {
+  color: #a7f36b;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.projects-header h1 {
+  margin-top: 18px;
+
+  font-size: clamp(50px, 7vw, 85px);
+
+  line-height: 1;
+
+  letter-spacing: -4px;
+}
+
+.projects-intro {
+  max-width: 650px;
+
+  margin-top: 25px;
+
+  color: #9da5b3;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   PROJECT LIST
+========================================= */
+
+.projects-list {
+  width: min(1180px, calc(100% - 40px));
+
+  margin: auto;
+}
+
+
+/* =========================================
+   PROJECT CASE STUDY
+========================================= */
+
+.project-case-study {
+  padding: 90px 0;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* =========================================
+   IMAGE SLIDER
+========================================= */
+
+.project-slider {
+  position: sticky;
+
+  top: 40px;
+
+  height: 520px;
+
+  overflow: hidden;
+
+  background: #0c1118;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 4px;
+}
+
+
+/* Image */
+
+.project-image {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =========================================
+   SLIDER BUTTONS
+========================================= */
+
+.slider-button {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 45px;
+
+  height: 45px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  background: rgba(0, 0, 0, 0.6);
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  transition: 0.2s;
+}
+
+.slider-button:hover {
+  background: #a7f36b;
+
+  color: #07090d;
+
+  border-color: #a7f36b;
+}
+
+.slider-prev {
+  left: 15px;
+}
+
+.slider-next {
+  right: 15px;
+}
+
+
+/* =========================================
+   IMAGE COUNTER
+========================================= */
+
+.image-counter {
+  position: absolute;
+
+  top: 15px;
+
+  right: 15px;
+
+  padding: 7px 12px;
+
+  background: rgba(0, 0, 0, 0.65);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  font-size: 11px;
+
+  color: #fff;
+}
+
+
+/* =========================================
+   SLIDER DOTS
+========================================= */
+
+.slider-dots {
+  position: absolute;
+
+  bottom: 20px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+
+  gap: 8px;
+}
+
+.slider-dot {
+  width: 7px;
+
+  height: 7px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.35);
+
+  cursor: pointer;
+}
+
+.slider-dot.active {
+  width: 24px;
+
+  border-radius: 10px;
+
+  background: #a7f36b;
+}
+
+
+/* =========================================
+   PROJECT INFORMATION
+========================================= */
+
+.project-information {
+  padding-top: 10px;
+}
+
+.case-number {
+  display: block;
+
+  color: #606977;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 25px;
+}
+
+.project-information h2 {
+  font-size: 48px;
+
+  letter-spacing: -2px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.project-information h3 {
+  color: #9da5b3;
+
+  font-size: 19px;
+
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================================
+   TECHNOLOGY TAGS
+========================================= */
+
+.technology-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 50px;
+}
+
+.technology-tags span {
+  padding: 8px 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  background: rgba(255, 255, 255, 0.025);
+
+  color: #c4cad3;
+
+  font-size: 11px;
+
+  border-radius: 3px;
+}
+
+
+/* =========================================
+   PROJECT DETAILS
+========================================= */
+
+.project-detail {
+  padding: 28px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.detail-label {
+  color: #a7f36b;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 15px;
+}
+
+.detail-text {
+  max-width: 600px;
+
+  color: #9da5b3;
+
+  font-size: 14px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.feature-list {
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+}
+
+.feature-list li {
+  color: #b9c0ca;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  padding-left: 18px;
+
+  position: relative;
+}
+
+.feature-list li::before {
+  content: "→";
+
+  position: absolute;
+
+  left: 0;
+
+  color: #a7f36b;
+}
+
+
+/* =========================================
+   PROJECT LINKS
+========================================= */
+
+.project-links {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 35px;
+}
+
+.project-live-button,
+.project-github-button {
+  padding: 13px 20px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.project-live-button {
+  background: #a7f36b;
+
+  color: #07090d;
+}
+
+.project-live-button:hover {
+  transform: translateY(-2px);
+}
+
+.project-github-button {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  color: #fff;
+}
+
+.project-github-button:hover {
+  border-color: #a7f36b;
+
+  color: #a7f36b;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .project-case-study {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .project-slider {
+    position: relative;
+
+    top: auto;
+
+    height: 500px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .projects-header {
+    width: calc(100% - 28px);
+
+    padding: 75px 0 60px;
+  }
+
+  .projects-header h1 {
+    font-size: 52px;
+
+    letter-spacing: -3px;
+  }
+
+  .projects-list {
+    width: calc(100% - 28px);
+  }
+
+  .project-case-study {
+    padding: 65px 0;
+
+    gap: 35px;
+  }
+
+  .project-slider {
+    height: 330px;
+  }
+
+  .project-information h2 {
+    font-size: 38px;
+  }
+
+  .project-information h3 {
+    font-size: 17px;
+  }
+
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-live-button,
+  .project-github-button {
+    text-align: center;
+  }
+
+}
