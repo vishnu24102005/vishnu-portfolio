@@ -14,6 +14,7 @@ import About from "./About.jsx";
 import Achievements from "./Achievements.jsx";
 import Projects from "./Projects.jsx";
 import Experience from "./Experience.jsx";
+import Certification from "./Certification.jsx";
 
 
 /* =========================================================
@@ -109,6 +110,10 @@ function Home() {
 
           <Link to="/achievements">
             Achievements
+          </Link>
+
+          <Link to="/certification">
+            Certification
           </Link>
 
 
@@ -1013,6 +1018,10 @@ function App() {
       <Route
         path="/achievements"
         element={<Achievements />}
+      />
+      <Route
+        path="/certification"
+        element={<Certification />}
       />
 
     </Routes>
