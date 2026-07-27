@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import { useRef, useState } from "react";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 import emailjs from "@emailjs/browser";
 
 import About from "./About.jsx";
@@ -979,52 +979,55 @@ function App() {
 
   return (
 
-    <Routes>
+    <>
+      <Routes>
 
-      {/* HOME */}
+        {/* HOME */}
 
-      <Route
-        path="/"
-        element={<Home />}
-      />
-
-
-      {/* ABOUT */}
-
-      <Route
-        path="/about"
-        element={<About />}
-      />
+        <Route
+          path="/"
+          element={<Home />}
+        />
 
 
-      {/* PROJECTS */}
+        {/* ABOUT */}
 
-      <Route
-        path="/projects"
-        element={<Projects />}
-      />
-
-
-      {/* EXPERIENCE */}
-
-      <Route
-        path="/experience"
-        element={<Experience />}
-      />
+        <Route
+          path="/about"
+          element={<About />}
+        />
 
 
-      {/* ACHIEVEMENTS */}
+        {/* PROJECTS */}
 
-      <Route
-        path="/achievements"
-        element={<Achievements />}
-      />
-      <Route
-        path="/certification"
-        element={<Certification />}
-      />
+        <Route
+          path="/projects"
+          element={<Projects />}
+        />
 
-    </Routes>
+
+        {/* EXPERIENCE */}
+
+        <Route
+          path="/experience"
+          element={<Experience />}
+        />
+
+
+        {/* ACHIEVEMENTS */}
+
+        <Route
+          path="/achievements"
+          element={<Achievements />}
+        />
+        <Route
+          path="/certification"
+          element={<Certification />}
+        />
+
+      </Routes>
+      <Analytics />
+    </>
 
   );
 }
