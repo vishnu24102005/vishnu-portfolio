@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import { useRef, useState } from "react";
-
+import { Analytics } from "@vercel/analytics/next"
 import emailjs from "@emailjs/browser";
 
 import About from "./About.jsx";
