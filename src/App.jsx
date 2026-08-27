@@ -253,7 +253,7 @@ function Home() {
 
 
             <a
-              href="https://leetcode.com/u/vishnu_sanjay_kumar/"
+              href="https://leetcode.com/u/vishnu_sanjay_kumar_P/"
               target="_blank"
               rel="noreferrer"
             >
